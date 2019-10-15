@@ -1,0 +1,67 @@
+Đề bài: Việt Nam là nước đăng cai tổ chức cuộc thi Robocon 2020 và địa điểm chọn tổ chức chính là ICTU, để đảm bảo tính công bằng, khách quan trong cuộc thi Ban 
+tổ chức quyết định xây dựng một hệ thống chấm thi tự động.
+
+Tuy nhiên Ban tổ chức đang rất bận cho các công việc khác quan trọng như xây nhà thi đấu, họp bàn kế hoạch tổ chức,... Bạn là một sinh viên IT đầy tài năng và 
+bạn đã xung phong giúp Ban tổ chức xây dựng hệ thống chấm thi này, Ban tổ chức cho bạn biết luật chơi như sau:
+
+- Sân thi đấu là một ma trận vuông N*N đây cũng chính là vùng hoạt động mà Robot được phép hoạt động, ở viền ngoài cùng của sân là đường đi được đánh số 0 bên 
+trong là điểm số khi robot đi vào vùng này sẽ được ăn điểm, nếu Robot đi vào ô đã từ được đi qua rồi thì sẽ không được tính điểm nữa, nếu 2 Robot đâm vào nhau 
+2 Robot sẽ không được tính điểm tại ô đâm nhau và 2 Robot sẽ bị ngã và không thể tiếp tục thi đấu.
+
+- Một trận đấu sẽ có 2 đội tham gia là đội Xanh và đội Đỏ
+
+- Vị trí bắt đầu của Robot Xanh ở góc trên cùng bên trái và hướng mặt xuống dưới
+
+- Vị trí bắt đầu của Robot Đỏ ở góc dưới cùng bên phải và hướng mặt lên trên
+
+
+
+Input:
+Dòng đầu tiên chứa số lượng test case T (T <= 10)
+
+Mỗi test case bao gồm:
+Dòng đầu tiên chứa 2 số nguyên N và M các nhau bởi khoảng trắng (5 <= N, M <= 100)
+N dòng tiếp theo mỗi dòng chứa N số biểu thị cho sân chơi Robocon (Dạng ma trận N*N)
+Dòng thứ N+1 là M số lệnh mà Robot xanh thực hiện.
+Dòng thứ N+2 là M số lệnh mà Robot đỏ thực hiện
+(Trong đó: 0 là robot tiết về phía trước 1 bước, 1 là robot đứng yên nhưng quay sang trái, 2 là robot đứng yên nhưng quay người sang phải. Dữ liệu này đảm bảo 
+cho robot không đi ra ngoài vùng hoạt động).
+
+Output:
+
+Mỗi test case in trên một dòng gồm 2 số nguyên X và Y. Trong đó X là số điểm mà robot xanh đạt được, Y là số điểm mà robot đỏ đạt được
+ 
+
+Ví dụ:
+
+Input
+
+Output
+
+1
+
+9 15
+
+0 0 0 0 0 0 0 0 0
+
+0 2 6 8 9 1 6 3 0
+
+0 4 5 6 2 3 4 4 0
+
+0 5 6 3 8 9 4 7 0
+
+0 7 5 6 2 8 1 4 0
+
+0 4 7 8 2 9 2 3 0
+
+0 9 5 8 9 6 5 4 0
+
+0 7 5 8 1 2 5 7 0
+
+0 0 0 0 0 0 0 0 0
+
+0 1 0 0 0 2 0 0 1 0 0 0 2 0 0
+
+0 1 0 2 0 0 0 0 1 0 0 0 0 0 0
+
+33 29
